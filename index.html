@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <style>
+       .container {
+            width: 50%;
+            background-color: #f9f9f9;
+            height: auto;
+            padding: 2px;
+            box-sizing: border-box;
+        }
+        .roo {
+            margin: 12px 0px;
+        }
+        input[type=text], input[type=number], input[type=email], input[type=password] {
+            border: 2px solid #f9f9f9;
+            padding: 10px 5px;
+            border-radius: 4px;
+        }
+        button[type=submit] {
+            width: 100%;
+            text-align: center;
+            background-color: green;
+            color: white;
+            border: none;
+        }
+    </style>
+    
+    <script>
+    function new(){        
+        document.getElementById("demo").innerHtml = "Submitted"
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+    <form action="" method="">
+        <div class="roo">
+            <label>Name:</label><br>
+        </div>
+        <div class="too">
+            <input type="text"><br>
+        </div>
+        <div class="roo">
+            <label>Email Address:</label><br>
+        </div>
+        <div class="too">
+            <input type="email"><br>
+        </div>
+        <div class="roo">
+            <label>Phone number</label><br>
+        </div>
+        <div class="too">
+            <input type="number"><br>
+        </div>
+        <div class="roo">
+            <label>Gender</label><br>
+        </div>        
+            <label>Male</label>                
+        <input type="checkbox">          
+        <label>Female</label>       
+        <input type="checkbox"><br>
+        <div class="roo">
+            <label>Password</label><br>
+        </div>
+        <div class="too">
+            <input type="password"><br>
+        </div>
+        <button type="submit" onclick="new()">Submit</button>
+        <p id="demo"></p>
+    </form>
+    </div>   
+</body>
+</html>
